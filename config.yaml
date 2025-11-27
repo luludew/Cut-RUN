@@ -1,0 +1,8 @@
+work_dir: /mnt/data2/userdata/co_worker_labs/wanglu/cutrun/B16_H3K36me3/pipeline/
+species: mouse
+samples: /mnt/data2/userdata/co_worker_labs/wanglu/cutrun/B16_H3K36me3/pipeline/samples.tsv
+ref_files: /mnt/data2/userdata/co_worker_labs/wanglu/cutrun/B16_H3K36me3/pipeline/reference_files.tsv
+threads: 20
+MAPQ: 20
+paired-end: true
+add_umi: false

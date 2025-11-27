@@ -1,0 +1,5 @@
+sample_id	R1	R2
+MCM22A	/mnt/data2/userdata/co_worker_labs/wanglu/rawdata/cutrun/B16_H3K36me3_2510/MERGED_FASTQS/B16_H3K36me3_MCM22A_R1.fastq.gz	/mnt/data2/userdata/co_worker_labs/wanglu/rawdata/cutrun/B16_H3K36me3_2510/MERGED_FASTQS/B16_H3K36me3_MCM22A_R2.fastq.gz
+POLE3KO	/mnt/data2/userdata/co_worker_labs/wanglu/rawdata/cutrun/B16_H3K36me3_2510/MERGED_FASTQS/B16_H3K36me3_POLE3KO_R1.fastq.gz	/mnt/data2/userdata/co_worker_labs/wanglu/rawdata/cutrun/B16_H3K36me3_2510/MERGED_FASTQS/B16_H3K36me3_POLE3KO_R2.fastq.gz
+Cas9only	/mnt/data2/userdata/co_worker_labs/wanglu/rawdata/cutrun/B16_H3K36me3_2510/MERGED_FASTQS/B16_H3K36me3_Cas9only_R1.fastq.gz	/mnt/data2/userdata/co_worker_labs/wanglu/rawdata/cutrun/B16_H3K36me3_2510/MERGED_FASTQS/B16_H3K36me3_Cas9only_R2.fastq.gz
+POLE4KO	/mnt/data2/userdata/co_worker_labs/wanglu/rawdata/cutrun/B16_H3K36me3_2510/MERGED_FASTQS/B16_H3K36me3_POLE4KO_R1.fastq.gz	/mnt/data2/userdata/co_worker_labs/wanglu/rawdata/cutrun/B16_H3K36me3_2510/MERGED_FASTQS/B16_H3K36me3_POLE4KO_R2.fastq.gz

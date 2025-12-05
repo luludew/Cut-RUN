@@ -1,0 +1,82 @@
+# 文件路径配置
+samples: "samples.tsv"
+bam_dir: "/mnt/data2/userdata/co_worker_labs/wanglu/cutrun/smk_cutrun/pipeline/dedup_bam_pe/"
+outdir: "k9_results"
+filedir: "/mnt/data2/userdata/co_worker_labs/wanglu/cutrun/smk_cutrun/pipeline"
+
+# 基因组参数
+genome_size: "mm"
+genome: "mm10"
+
+# 分析参数
+q_value: 0.05
+fdr_cutoff: 0.05
+log2fc_cutoff: 0.58
+
+# 注释文件配置
+gtf:
+  - "/mnt/data2/userdata/co_worker_labs/wanglu/ref/ref_files_mouse/ucsc.mm10.gtf"
+
+
+repeatmasker_gtf: "/mnt/data2/userdata/co_worker_labs/wanglu/ref/ref_files_mouse/mm10_rmsk_TE.gtf"
+
+# Motif分析配置
+motif_size: 200
+motif_mask: ""
+motif_params: "-mknown vertebrates -nomotif"
+annotation_params: "-annStats stats.txt -go goResults"
+
+# 样本信息 (使用标准YAML列表格式)
+samples:
+  - sample: "WT_H3K9me3_CR_1"
+    condition: "WT"
+    replicate: 1
+  - sample: "WT_H3K9me3_CR_2"
+    condition: "WT"
+    replicate: 2
+  - sample: "POLE3_KO_3_H3K9me3_CR_1"
+    condition: "POLE3_KO_3"
+    replicate: 1
+  - sample: "POLE3_KO_3_H3K9me3_CR_2"
+    condition: "POLE3_KO_3"
+    replicate: 2
+  - sample: "POLE3_KO_10_H3K9me3_CR_1"
+    condition: "POLE3_KO_10"
+    replicate: 1
+  - sample: "POLE3_KO_10_H3K9me3_CR_2"
+    condition: "POLE3_KO_10"
+    replicate: 2
+  - sample: "POLE4_KO_2_H3K9me3_CR_1"
+    condition: "POLE4_KO_2"
+    replicate: 1
+  - sample: "POLE4_KO_2_H3K9me3_CR_2"
+    condition: "POLE4_KO_2"
+    replicate: 2
+  - sample: "POLE4_KO_17_H3K9me3_CR_1"
+    condition: "POLE4_KO_17"
+    replicate: 1
+  - sample: "POLE4_KO_17_H3K9me3_CR_2"
+    condition: "POLE4_KO_17"
+    replicate: 2
+
+# Comparison definitions (group1 vs group2)
+comparisons:
+  POLE3_KO3_vs_WT:
+    - "WT"       # 对照组 (group2)
+    - "POLE3_KO_3" # 处理组 (group1)
+  POLE3_KO10_vs_WT:
+    - "WT"       # 对照组 (group2)
+    - "POLE3_KO_10" # 处理组 (group1)
+  POLE4_KO2_vs_WT:
+    - "WT"       # 对照组 (group2)
+    - "POLE4_KO_2" # 处理组 (group1)
+  POLE4_KO17_vs_WT:
+    - "WT"       # 对照组 (group2)
+    - "POLE4_KO_17" # 处理组 (group1)
+
+
+enrichment:
+  organism_code: "mmu"
+  go_ont: "BP"
+  pvalue_cutoff: 0.05
+  qvalue_cutoff: 0.2
